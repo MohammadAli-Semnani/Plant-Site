@@ -1,0 +1,63 @@
+.headerContainer{
+    height: 100vh;
+    background-image: url('../Images/123.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    background-color: #2e6d48;
+    
+    /* background-image: url('../Images/plant.jpg'); */
+    height: 80px;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 0px 0px 120px 120px;
+}
+.listItem{
+    list-style: none;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.listItem li{
+    margin-top: 10px;
+}
+.listItem a{
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #bcebc8;
+}
+.listItem a:hover{
+    text-decoration:underline;
+}
+.logoContainer{
+    position: absolute;
+    right: 20px;
+    top: -5px;
+}
+.logoContainer img{
+    width: 100px;
+}
+.sentence{
+    font-size: 55px;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+.sentence .diferent{
+    top: 75px;
+    position: absolute;
+    left: 195px;
+    font-weight:bold;
+    color:#218c74;
+}
+.diferent2{
+    position: relative;
+    left: 300px;
+    top: 82px;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Averia+Sans+Libre:wght@300&family=Caveat:wght@600&family=Quicksand:wght@700&family=Sen&family=Signika+Negative:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Sen', sans-serif;
+}
+body{
+    height: 100vh;
+}
+/* .logoContainer{
+    position: absolute;
+    right: 20px;
+    top: -1px;
+}
+.LinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-decoration: none;
+}
+.logoContainer img{
+    width: 120px;
+}
+.logoText{
+    font-size: 20px;
+    font-weight: bold;
+    color: #006838;
+} */

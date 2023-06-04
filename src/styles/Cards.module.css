@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgb(120,224,143);
+    background: linear-gradient(0deg, rgba(120,224,143,1) 9%, rgba(247,247,245,1) 77%);
+}
+.title{
+    position: absolute;
+    font-size: 60px;
+    left: 35%;
+    color: #373A44;
+    
+}
+.title span {
+    color: #FC974E;
+}
+.backIcon{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
