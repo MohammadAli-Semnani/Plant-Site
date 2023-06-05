@@ -150,7 +150,7 @@ const SignUp = () => {
                 Create Account
               </button>
               <p className={styles.singupcollection}>
-                Already have an Account<a href="#">Sing In</a>
+                Already have an Account<Link to="/singin">Sing In</Link>
               </p>
             </div>
           </form>
