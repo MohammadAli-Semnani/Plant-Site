@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const SingIn = () => {
   const information = {
-    email: "",
+      email: "",
       password: "",
   };
   const [info, setInfo] = useState(information);
@@ -17,7 +17,7 @@ const SingIn = () => {
   const handleButtonClick = (event) => {
     event.preventDefault();
 
-    if (Object.keys(errors).length === 0) {
+    if (!Object.keys(errors).length) {
       toast.success("Sign Up Successfully!");
       setInfo(information);
     } else {
@@ -31,14 +31,14 @@ const SingIn = () => {
   }, [info]);
 
   const changeHandler = (event) => {
-    const {value, name, checked} = event.target;
+        const {value, name, checked} = event.target;
 
-    if (name === "isAccepted") {
-      setInfo({...info, [name]: checked});
-    } else {
-      setInfo({...info, [name]: value});
-    }
-    console.log("This is Info : ", info);
+        if (name === "isAccepted") {
+        setInfo({...info, [name]: checked});
+        } else {
+        setInfo({...info, [name]: value});
+        }
+        console.log("This is Info : ", info);
   };
 
   return (
