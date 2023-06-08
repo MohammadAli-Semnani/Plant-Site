@@ -10,7 +10,7 @@ import { plants } from "./ProductsApi";
 
 const ProductsContext = createContext()
 
-const Cards = () => {
+const Cards = ({children}) => {
 
   const [products, setProducts] =  useState([])
 
@@ -43,6 +43,7 @@ const Cards = () => {
           />
         ))}
       </div>
+      {children}
     </ProductsContext.Provider>
   );
 };
