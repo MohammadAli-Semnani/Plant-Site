@@ -1,29 +1,31 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Cards.module.css";
 import Card from "./Card";
 import {v4} from "uuid";
 import {Link} from "react-router-dom";
 
 import backIcon from "../Images/backIcon.png";
-//Products
-import { plants } from "./ProductsApi";
+//API
+import {productsContextApi} from "./ProductsApi";
 
-const ProductsContext = createContext()
+
+
 
 const Cards = ({children}) => {
-
+  
+  const productsContext = useContext(productsContextApi)
   const [products, setProducts] =  useState([])
 
   useEffect(() => {
 
-    setProducts(plants)
+    setProducts(productsContext)
     
   }, [])
   
 
 
   return (
-    <ProductsContext.Provider value={products}>
+    <>
       <div className={styles.backContainer}>
         <Link to="/">
           <img className={styles.backIcon} src={backIcon} />
@@ -44,7 +46,7 @@ const Cards = ({children}) => {
         ))}
       </div>
       {children}
-    </ProductsContext.Provider>
+    </>
   );
 };
 
